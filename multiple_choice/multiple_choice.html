@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Choice</title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='app.css'>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <h1>Multiple Choice Test</h1>
+      <form class="test">
+
+        <input class='submit' type='submit' value="Submit Quiz">
+        <button class='reset_form'>Reset</button>
+      </form>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+
+  <script type='handlebars' id='test'>
+      {{#each questions as |question| }}
+        <div class='question'>
+          <h3>Question {{question.id}}</h3>
+          <p class='description'>{{question.description}}</p>
+          {{#each options }}
+            <label><input type='radio' value='{{this}}' name={{question.id}} >{{this}}</label>
+          {{/each}}
+        </div>
+        <p class='result' data-id='{{question.id}}'></p>
+      {{/each}}
+  </script>
+
+</html>
+
+

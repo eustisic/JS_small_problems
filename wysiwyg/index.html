@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Editor</title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='app.css'>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  </head>
+  <body>
+    <h1>Rich Text Editor</h1>
+    <div class='wrapper'>
+      <div class='buttons'>
+        
+      </div>
+      <div class='text_box' contenteditable="true">
+
+      </div>
+    </div>
+  </body>
+
+  <script src="app.js"></script>
+  <script type="handlebars">
+    {{#each buttons}}
+      <button class="button" id={{this}}>{{this}}</button>
+    {{/each}}
+  </script>
+</html>

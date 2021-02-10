@@ -1,0 +1,45 @@
+body {
+  background: #22596e;
+}
+
+#calculator {
+  background: aliceblue;
+  width: 400px;
+  height: 450px;
+  margin: 100px auto;
+  border-radius: 5px;
+}
+
+#controls {
+  box-sizing: border-box;
+  display: grid;
+  align-content: end;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+#screen {
+  height: 200px;
+  box-sizing: border-box;
+}
+
+.calculation {
+  height: 16px;
+  font-size: 16px;
+  text-align: right;
+  padding: 10px 10px 0 0;
+}
+
+.current_num {
+  font-size: 78px;
+  margin: 0 10px 0 10px;
+  text-align: right;
+  height: 100px;
+  padding: 50px 10px 0 0;
+  border-bottom: 1px solid black;
+}
+
+
+button {
+  height: 50px;
+  border-radius: 5px;
+}

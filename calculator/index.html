@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="screen">
+        <p class="calculation"></p>
+        <p class="current_num">0</p>
+      </div>
+      <div id='controls'>
+ 
+      </div>
+    </div>
+  </body>
+  <script type='handlebars'>
+    {{#each buttons}}
+      <button class={{class}} value={{value}}>{{value}}</button>
+    {{/each}}
+  </script>
+</html>
